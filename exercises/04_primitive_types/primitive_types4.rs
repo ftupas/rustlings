@@ -5,13 +5,12 @@
 // Execute `rustlings hint primitive_types4` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
 
 #[test]
 fn slice_out_of_array() {
     let a = [1, 2, 3, 4, 5];
 
-    let nice_slice = ???
+    let nice_slice = &a[1..4]; // Use & to borrow a section of `a` as a reference, slice starts from 1 and stops (excludes) 4
 
     assert_eq!([2, 3, 4], nice_slice)
 }
